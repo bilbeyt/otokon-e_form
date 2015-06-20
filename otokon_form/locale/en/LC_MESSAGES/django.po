@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-20 21:40+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: form/models.py:7
+msgid "Full Name"
+msgstr ""
+
+#: form/models.py:8
+msgid "Department"
+msgstr ""
+
+#: form/models.py:9
+msgid "School Number"
+msgstr ""
+
+#: form/models.py:10
+msgid "Term"
+msgstr ""
+
+#: form/models.py:11
+msgid "Birthday"
+msgstr ""
+
+#: form/models.py:12
+msgid "Please enter birthday format YYYY-MM-DD"
+msgstr ""
+
+#: form/models.py:13
+msgid "Interests"
+msgstr ""
+
+#: form/models.py:14
+msgid "Technical Information"
+msgstr ""
+
+#: form/models.py:15
+msgid "Your works about hardware or software"
+msgstr ""
+
+#: form/models.py:16
+msgid "Phone Number"
+msgstr ""
+
+#: form/models.py:16
+msgid "Please enter your country code too. For Turkey starts with +90"
+msgstr ""
+
+#: form/models.py:18
+msgid "E-Mail"
+msgstr ""
+
+#: form/models.py:19
+msgid "Dorm Adress"
+msgstr ""
+
+#: form/models.py:20
+msgid "Home Adress"
+msgstr ""
+
+#: form/models.py:21
+msgid "Registry Date"
+msgstr ""
+
+#: form/models.py:22
+msgid "Organization Team"
+msgstr ""
+
+#: form/models.py:23
+msgid ""
+"Organization team works actively in OTOKON's related organizations such as "
+"ITURO and TOK. Advertising, organization planning ,and communicating with "
+"sponsors are the works for this team."
+msgstr ""
+
+#: form/models.py:27
+msgid "Technical Team"
+msgstr ""
+
+#: form/models.py:28
+msgid ""
+"This team works on the technical projects which are suggested or already "
+"exist. Also, this team attendslocal or international projects. Project "
+"managers and the Education Team give necessary technical information."
+msgstr ""
+
+#: form/models.py:32
+msgid "Informatics Team"
+msgstr ""
+
+#: form/models.py:33
+msgid ""
+"This team is responsible for club's computer andforum. Also, this team works "
+"on online registry, database, kiosk and RFID technologies."
+msgstr ""
+
+#: form/models.py:36
+msgid "Education Team"
+msgstr ""
+
+#: form/models.py:37
+msgid ""
+"This team organizes seminars and educations to sharing information. Also, "
+"this team provides a basis of knowledge for OTOKON's technical projects."
+msgstr ""
+
+#: form/models.py:40
+msgid "Press and Publishment Team"
+msgstr ""
+
+#: form/models.py:41
+msgid ""
+"This team works on archiving and sharing informationwhich are provided from "
+"technical works and researches quickly. Also, this team publishes KONTROL "
+"magazine."
+msgstr ""
+
+#: form/models.py:44
+msgid "Technical Trip and Social Activity Team"
+msgstr ""
+
+#: form/models.py:46
+msgid ""
+"This team organize technical trip to give new points of view to members of "
+"club, also social activities are organized to motivate members"
+msgstr ""
+
+#: form/models.py:49
+msgid "Evaluated ?"
+msgstr ""
+
+#: form/views.py:19
+msgid "Form created successfully!"
+msgstr ""
+
+#: otokon_form/settings.py:59
+msgid "Turkish"
+msgstr ""
+
+#: otokon_form/settings.py:60
+msgid "English"
+msgstr ""
+
+#: templates/form_create.html:10
+msgid "OTOKON Form Create"
+msgstr ""
+
+#: templates/form_create.html:61
+msgid "Form Create"
+msgstr ""
+
+#: templates/form_create.html:67
+msgid "Important Note"
+msgstr ""
+
+#: templates/form_create.html:68
+msgid ""
+"\n"
+"          <p>Please go and register to <a href=\"http://www.otokon.itu.edu."
+"tr/forum/\">\n"
+"          forum</a> as your username in the format \"name surname\". The "
+"announcements\n"
+"          regarding OTOKON such as organizations and seminars are made "
+"using\n"
+"          this forum.</p>\n"
+"          "
+msgstr ""
+
+#: templates/form_create.html:76
+msgid "Submit"
+msgstr ""

@@ -5,6 +5,7 @@ from django.core.urlresolvers import reverse
 from django.contrib import messages
 from .models import Form
 from .forms import FormCreateForm
+from django.utils.translation import ugettext_lazy as _
 
 
 class FormCreateView(CreateView):
@@ -15,5 +16,5 @@ class FormCreateView(CreateView):
     def form_valid(self, form):
         instance = form.instance
         instance.save()
-        messages.success(self.request, "Form created successfully!")
+        messages.success(self.request, _("Form created successfully!"))
         return HttpResponseRedirect(reverse("create"))
