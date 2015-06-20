@@ -1,0 +1,61 @@
+{% load staticfiles bootstrap3 %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>OTOKON Form Create</title>
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/form_template.css" %}" rel="stylesheet">
+    <script src="{% static "JS/ie-emulation-modes-warning.js" %}"></script>
+  </head>
+  <body background-image="">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="{% static "images/otokon_logo_büyük.png" %}" width=50px heigth=50px></img>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active" ><a href="http://www.otokon.itu.edu.tr/OTOKON.html">OTOKON</a></li>
+            <li class="active"><a href="http://www.otokon.itu.edu.tr/forum/">OTOKON-FORUM</a></li>
+            <li class="active"><a href="http://www.ituro.itu.edu.tr/">ITURO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <br>
+      {% bootstrap_messages %}
+      <br>
+      <h1>Form Create</h1>
+      <div class="starter-template">
+        <form enctype="multipart/form-data" action="" method="post" class="form">
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          <br><hr>
+          <h4 style="color:red">Important Note</h4>
+          <p>Please go and register to <a href="http://www.otokon.itu.edu.tr/forum/">
+          forum</a> as your username in the format "name surname". The announcements
+          regarding OTOKON such as organizations and seminars are made using
+          this forum.</p><hr><br>
+          {% buttons %}
+          <button type="submit" class="btn btn-primary">Submit</button>
+          {% endbuttons %}
+        </form>
+      </div>
+    </div>
+    <script src="{% static "JS/jquery.min.js" %}"></script>
+    <script src="{% static "JS/bootstrap.min.js" %}"></script>
+    <script src="{% static "JS/ie10-viewport-bug-workaround.js" %}"></script>
+  </body>
+</html>
