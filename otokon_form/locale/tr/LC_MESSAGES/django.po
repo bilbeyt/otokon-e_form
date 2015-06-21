@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-20 21:40+0300\n"
+"POT-Creation-Date: 2015-06-21 12:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,71 +18,83 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: form/models.py:7
+#: form/forms.py:18
+msgid "Personal Information"
+msgstr "Kişisel Bilgiler"
+
+#: form/forms.py:28
+msgid "Contact"
+msgstr "Bağlantı Bilgileri"
+
+#: form/forms.py:35
+msgid "Join Teams"
+msgstr "Ekiplere Katıl"
+
+#: form/models.py:8
 msgid "Full Name"
 msgstr "İsim Soyisim"
 
-#: form/models.py:8
+#: form/models.py:9
 msgid "Department"
 msgstr "Bölüm"
 
-#: form/models.py:9
+#: form/models.py:10
 msgid "School Number"
 msgstr "Okul Numarası"
 
-#: form/models.py:10
+#: form/models.py:11
 msgid "Term"
 msgstr "Dönem"
 
-#: form/models.py:11
+#: form/models.py:12
 msgid "Birthday"
 msgstr "Doğum Günü"
 
-#: form/models.py:12
-msgid "Please enter birthday format YYYY-MM-DD"
-msgstr "Lütfen doğum Gününüzü YYYY-AA-GG şeklinde girin"
-
 #: form/models.py:13
+msgid "Please enter birthday as YYYY-MM-DD"
+msgstr "Lütfen doğum gününüzü YYYY-AA-GG şeklinde girin"
+
+#: form/models.py:14
 msgid "Interests"
 msgstr "İlgi Alanları"
 
-#: form/models.py:14
+#: form/models.py:15
 msgid "Technical Information"
 msgstr "Teknik Bilgi"
 
-#: form/models.py:15
+#: form/models.py:16
 msgid "Your works about hardware or software"
 msgstr "Donanım veya yazılım alanlarındaki çalışmalarınız"
 
-#: form/models.py:16
+#: form/models.py:17
 msgid "Phone Number"
 msgstr "Telefon Numarası"
 
-#: form/models.py:16
+#: form/models.py:17
 msgid "Please enter your country code too. For Turkey starts with +90"
 msgstr "Lütfen ülke kodunuzu da giriniz. Türkiye için +90 ile başlar."
 
-#: form/models.py:18
+#: form/models.py:19
 msgid "E-Mail"
 msgstr "E-Mail"
 
-#: form/models.py:19
+#: form/models.py:20
 msgid "Dorm Adress"
 msgstr "Yurt Adresi"
 
-#: form/models.py:20
+#: form/models.py:21
 msgid "Home Adress"
 msgstr "Ev Adresi"
 
-#: form/models.py:21
+#: form/models.py:22
 msgid "Registry Date"
 msgstr "Kayıt Tarihi"
 
-#: form/models.py:22
+#: form/models.py:23
 msgid "Organization Team"
 msgstr "Organizasyon Ekibi"
 
-#: form/models.py:23
+#: form/models.py:24
 msgid ""
 "Organization team works actively in OTOKON's related organizations such as "
 "ITURO and TOK. Advertising, organization planning ,and communicating with "
@@ -92,11 +104,11 @@ msgstr ""
 "TOK bunlara örnektir. Organizasyon planlama, tanıtım, sponsorlarla iletişim "
 "gibi çalışmalarda görev alır."
 
-#: form/models.py:27
+#: form/models.py:28
 msgid "Technical Team"
 msgstr "Teknik Ekip"
 
-#: form/models.py:28
+#: form/models.py:29
 msgid ""
 "This team works on the technical projects which are suggested or already "
 "exist. Also, this team attendslocal or international projects. Project "
@@ -106,11 +118,11 @@ msgstr ""
 "Ulusal ve Uluslar arası projelere katılır. Gerekli teknik bilgi proje "
 "sorumluları ve Teknik Ekip tarafından verilir."
 
-#: form/models.py:32
+#: form/models.py:33
 msgid "Informatics Team"
 msgstr "Bilişim Ekibi"
 
-#: form/models.py:33
+#: form/models.py:34
 msgid ""
 "This team is responsible for club's computer andforum. Also, this team works "
 "on online registry, database, kiosk and RFID technologies."
@@ -118,11 +130,11 @@ msgstr ""
 "Kulüp bilgisayarı ve forumundan sorumludur. İnternetten kayıt, veritabanı, "
 "kiosk ve RFID teknolojileri üzerine çalışır."
 
-#: form/models.py:36
+#: form/models.py:37
 msgid "Education Team"
 msgstr "Eğitim Ekibi"
 
-#: form/models.py:37
+#: form/models.py:38
 msgid ""
 "This team organizes seminars and educations to sharing information. Also, "
 "this team provides a basis of knowledge for OTOKON's technical projects."
@@ -130,11 +142,11 @@ msgstr ""
 "OTOKON'un teknik projeleri için zemin hazırlamaya yönelik çalışma yapar. "
 "Bilgi paylaşımına yönelik eğitimler ve seminerler düzenler."
 
-#: form/models.py:40
+#: form/models.py:41
 msgid "Press and Publishment Team"
 msgstr "Basın Yayın Ekibi"
 
-#: form/models.py:41
+#: form/models.py:42
 msgid ""
 "This team works on archiving and sharing informationwhich are provided from "
 "technical works and researches quickly. Also, this team publishes KONTROL "
@@ -144,11 +156,11 @@ msgstr ""
 "ya da elektronik ortamda arşivleyip paylaşarak bilginin kısa yoldan "
 "yayılmasını sağlar. KONTROL dergisini çıkarır."
 
-#: form/models.py:44
+#: form/models.py:45
 msgid "Technical Trip and Social Activity Team"
 msgstr "Teknik Gezi ve Sosyal Etkinlikler Ekibi"
 
-#: form/models.py:46
+#: form/models.py:47
 msgid ""
 "This team organize technical trip to give new points of view to members of "
 "club, also social activities are organized to motivate members"
@@ -156,19 +168,23 @@ msgstr ""
 "OTOKON üyelerinin mesleğe yönelik ufuklarını açmak üzere teknik geziler, "
 "motivasyonu sürdürmek için sosyal etkinlikler düzenler."
 
-#: form/models.py:49
+#:form/models.py:50
 msgid "Evaluated ?"
 msgstr "Değerlendirildi mi?"
+
+#: form/models.py:51
+msgid "Is form evaluated?"
+msgstr "Form değerlendirildi mi?"
 
 #: form/views.py:19
 msgid "Form created successfully!"
 msgstr "Form başarıyla oluşturuldu."
 
-#: otokon_form/settings.py:59
+#: otokon_form/settings.py:61
 msgid "Turkish"
 msgstr "Türkçe"
 
-#: otokon_form/settings.py:60
+#: otokon_form/settings.py:62
 msgid "English"
 msgstr "İngilizce"
 
@@ -180,11 +196,11 @@ msgstr "OTOKON Form Oluşturma"
 msgid "Form Create"
 msgstr "Form Oluştur"
 
-#: templates/form_create.html:67
+#: templates/form_create.html:66
 msgid "Important Note"
 msgstr "Önemli Not"
 
-#: templates/form_create.html:68
+#: templates/form_create.html:67
 msgid ""
 "\n"
 "          <p>Please go and register to <a href=\"http://www.otokon.itu.edu."
@@ -203,6 +219,6 @@ msgstr ""
 "organizasyonlar vb.- forumdan yapılmaktadır.</p>\n"
 "         "
 
-#: templates/form_create.html:76
+#: templates/form_create.html:75
 msgid "Submit"
 msgstr "Onayla"

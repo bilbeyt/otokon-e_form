@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-20 21:40+0300\n"
+"POT-Creation-Date: 2015-06-21 12:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,142 +17,158 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: form/models.py:7
-msgid "Full Name"
+#: form/forms.py:18
+msgid "Personal Information"
+msgstr ""
+
+#: form/forms.py:28
+msgid "Contact"
+msgstr ""
+
+#: form/forms.py:35
+msgid "Join Teams"
 msgstr ""
 
 #: form/models.py:8
-msgid "Department"
+msgid "Full Name"
 msgstr ""
 
 #: form/models.py:9
-msgid "School Number"
+msgid "Department"
 msgstr ""
 
 #: form/models.py:10
-msgid "Term"
+msgid "School Number"
 msgstr ""
 
 #: form/models.py:11
-msgid "Birthday"
+msgid "Term"
 msgstr ""
 
 #: form/models.py:12
-msgid "Please enter birthday format YYYY-MM-DD"
+msgid "Birthday"
 msgstr ""
 
 #: form/models.py:13
-msgid "Interests"
+msgid "Please enter birthday as YYYY-MM-DD"
 msgstr ""
 
 #: form/models.py:14
-msgid "Technical Information"
+msgid "Interests"
 msgstr ""
 
 #: form/models.py:15
+msgid "Technical Information"
+msgstr ""
+
+#: form/models.py:16
 msgid "Your works about hardware or software"
 msgstr ""
 
-#: form/models.py:16
+#: form/models.py:17
 msgid "Phone Number"
 msgstr ""
 
-#: form/models.py:16
+#: form/models.py:17
 msgid "Please enter your country code too. For Turkey starts with +90"
 msgstr ""
 
-#: form/models.py:18
+#: form/models.py:19
 msgid "E-Mail"
 msgstr ""
 
-#: form/models.py:19
+#: form/models.py:20
 msgid "Dorm Adress"
 msgstr ""
 
-#: form/models.py:20
+#: form/models.py:21
 msgid "Home Adress"
 msgstr ""
 
-#: form/models.py:21
+#: form/models.py:22
 msgid "Registry Date"
 msgstr ""
 
-#: form/models.py:22
+#: form/models.py:23
 msgid "Organization Team"
 msgstr ""
 
-#: form/models.py:23
+#: form/models.py:24
 msgid ""
 "Organization team works actively in OTOKON's related organizations such as "
 "ITURO and TOK. Advertising, organization planning ,and communicating with "
 "sponsors are the works for this team."
 msgstr ""
 
-#: form/models.py:27
+#: form/models.py:28
 msgid "Technical Team"
 msgstr ""
 
-#: form/models.py:28
+#: form/models.py:29
 msgid ""
 "This team works on the technical projects which are suggested or already "
 "exist. Also, this team attendslocal or international projects. Project "
 "managers and the Education Team give necessary technical information."
 msgstr ""
 
-#: form/models.py:32
+#: form/models.py:33
 msgid "Informatics Team"
 msgstr ""
 
-#: form/models.py:33
+#: form/models.py:34
 msgid ""
 "This team is responsible for club's computer andforum. Also, this team works "
 "on online registry, database, kiosk and RFID technologies."
 msgstr ""
 
-#: form/models.py:36
+#: form/models.py:37
 msgid "Education Team"
 msgstr ""
 
-#: form/models.py:37
+#: form/models.py:38
 msgid ""
 "This team organizes seminars and educations to sharing information. Also, "
 "this team provides a basis of knowledge for OTOKON's technical projects."
 msgstr ""
 
-#: form/models.py:40
+#: form/models.py:41
 msgid "Press and Publishment Team"
 msgstr ""
 
-#: form/models.py:41
+#: form/models.py:42
 msgid ""
 "This team works on archiving and sharing informationwhich are provided from "
 "technical works and researches quickly. Also, this team publishes KONTROL "
 "magazine."
 msgstr ""
 
-#: form/models.py:44
+#: form/models.py:45
 msgid "Technical Trip and Social Activity Team"
 msgstr ""
 
-#: form/models.py:46
+#: form/models.py:47
 msgid ""
 "This team organize technical trip to give new points of view to members of "
 "club, also social activities are organized to motivate members"
 msgstr ""
 
-#: form/models.py:49
+#: form/models.py:50
 msgid "Evaluated ?"
+msgstr ""
+
+#: form/models.py:51
+msgid "Is form evaluated?"
 msgstr ""
 
 #: form/views.py:19
 msgid "Form created successfully!"
 msgstr ""
 
-#: otokon_form/settings.py:59
+#: otokon_form/settings.py:61
 msgid "Turkish"
 msgstr ""
 
-#: otokon_form/settings.py:60
+#: otokon_form/settings.py:62
 msgid "English"
 msgstr ""
 
@@ -164,11 +180,11 @@ msgstr ""
 msgid "Form Create"
 msgstr ""
 
-#: templates/form_create.html:67
+#: templates/form_create.html:66
 msgid "Important Note"
 msgstr ""
 
-#: templates/form_create.html:68
+#: templates/form_create.html:67
 msgid ""
 "\n"
 "          <p>Please go and register to <a href=\"http://www.otokon.itu.edu."
@@ -181,6 +197,6 @@ msgid ""
 "          "
 msgstr ""
 
-#: templates/form_create.html:76
+#: templates/form_create.html:75
 msgid "Submit"
 msgstr ""

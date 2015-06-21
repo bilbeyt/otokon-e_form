@@ -1,4 +1,5 @@
-{% load i18n staticfiles bootstrap3 %}
+{% load i18n staticfiles bootstrap3 crispy_forms_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,14 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>{% trans "OTOKON Form Create" %}</title>
+    <title>{% trans 'OTOKON Form Create' %}</title>
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
-    <link href="{% static "css/form_template.css" %}" rel="stylesheet">
-    <script src="{% static "JS/jquery.min.js" %}"></script>
-    <script src="{% static "JS/change_language.js" %}"></script>
+    <link href="{% static "css/navbar-fixed-top.css" %}" rel="stylesheet">
     <script src="{% static "JS/ie-emulation-modes-warning.js" %}"></script>
-    <script src="{% static "JS/bootstrap.min.js" %}"></script>
-    <script src="{% static "JS/ie10-viewport-bug-workaround.js" %}"></script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -28,15 +25,17 @@
           </button>
           <img src="{% static "images/otokon_logo_büyük.png" %}" width=50px heigth=50px/>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="http://www.otokon.itu.edu.tr/OTOKON.html">OTOKON</a></li>
-            <li class="active"><a href="http://www.otokon.itu.edu.tr/forum/">OTOKON-FORUM</a></li>
-            <li class="active"><a href="http://www.ituro.itu.edu.tr/">ITURO</a></li>
+            <li><a href="http://www.otokon.itu.edu.tr/forum/">OTOKON FORUM</a></li>
+            <li><a href="http://www.ituro.itu.edu.tr/">ITURO</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
             {% if LANGUAGE_CODE == 'en' %}
-            <li class="active" style="position:absolute;right:400px;"><a id="language-button" href="#">Türkçe</a></li>
+            <li class="active" id="language-button"><a href="#">Türkçe<span class="sr-only">(current)</span></a></li>
             {% elif LANGUAGE_CODE == 'tr' %}
-            <li class="active" style="position:absolute;right:400px;"><a id="language-button" href="#">English</a></li>
+            <li class="active" id="language-button"><a href="#">English<span class="sr-only">(current)</span></a></li>
             {% endif %}
           </ul>
         </div>
@@ -58,11 +57,10 @@
       {% bootstrap_messages %}
       <br>
       <h1>{% trans "Form Create" %}</h1>
-      <div class="starter-template">
-        <form enctype="multipart/form-data" action="" method="post" class="form">
+        <form enctype="multipart/form-data" action="" method="post">
           {% csrf_token %}
-          {% bootstrap_form form %}
-          <br><hr>
+          {% crispy form %}
+          <br><hr><div class="note">
           <h4 style="color:red">{% trans "Important Note" %}</h4>
           {% blocktrans %}
           <p>Please go and register to <a href="http://www.otokon.itu.edu.tr/forum/">
@@ -73,9 +71,13 @@
           <hr><br>
           {% buttons %}
           <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
-          {% endbuttons %}
+          {% endbuttons %}</div>
         </form>
-      </div>
     </div>
+    <script src="{% static "JS/jquery.min.js" %}"></script>
+    <script src="{% static "JS/bootstrap.min.js" %}"></script>
+    <script src="{% static "JS/ie10-viewport-bug-workaround.js" %}"></script>
+    <script src="{% static "JS/change_language.js" %}"></script>
+    <script src="{% static "JS/tooltip.js" %}"></script>
   </body>
 </html>

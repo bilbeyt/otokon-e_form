@@ -9,7 +9,6 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', include('form.urls')),
-    url(r'^captcha/', include('captcha.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
 

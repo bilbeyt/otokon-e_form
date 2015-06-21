@@ -1,6 +1,7 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.utils.translation import ugettext_lazy as _
+from django import forms
 
 
 class Form(models.Model):
@@ -9,7 +10,7 @@ class Form(models.Model):
     school_number = models.PositiveIntegerField(_("School Number"))
     term = models.PositiveSmallIntegerField(_("Term"))
     birthday = models.DateField(_("Birthday"), auto_now_add=False,
-    help_text=_("Please enter birthday format YYYY-MM-DD"))
+                help_text=(_("Please enter birthday as YYYY-MM-DD")))
     interests = models.TextField(_("Interests"))
     tech_info = models.TextField(_("Technical Information"),
                 help_text=_("Your works about hardware or software"))
@@ -47,7 +48,7 @@ class Form(models.Model):
               "of view to members of club, also social activities are organized "
               "to motivate members")))
     is_evaluated = models.BooleanField(_("Evaluated ?"), default=False,
-                 help_text=("_(Is form evaluated?"))
+                 help_text=(_("Is form evaluated?")))
 
     def __unicode__(self):
         return self.name
