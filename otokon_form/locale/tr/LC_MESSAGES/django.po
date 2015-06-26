@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-21 12:28+0300\n"
+"POT-Creation-Date: 2015-06-26 09:41+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,7 +168,7 @@ msgstr ""
 "OTOKON üyelerinin mesleğe yönelik ufuklarını açmak üzere teknik geziler, "
 "motivasyonu sürdürmek için sosyal etkinlikler düzenler."
 
-#:form/models.py:50
+#: form/models.py:50
 msgid "Evaluated ?"
 msgstr "Değerlendirildi mi?"
 
@@ -176,41 +176,56 @@ msgstr "Değerlendirildi mi?"
 msgid "Is form evaluated?"
 msgstr "Form değerlendirildi mi?"
 
-#: form/views.py:19
+#: form/views.py:23
+msgid "You are successfully logged out"
+msgstr "Başarıyla çıkış yaptınız"
+
+#: form/views.py:34
+msgid "You are successfully logged in"
+msgstr "Başarıyla giriş yaptınız"
+
+#: form/views.py:37
+msgid "Username and password mismatch"
+msgstr "Kullanıcı adı ve şifre eşleşmedi"
+
+#: form/views.py:53
 msgid "Form created successfully!"
 msgstr "Form başarıyla oluşturuldu."
 
-#: otokon_form/settings.py:61
+#: otokon_form/settings.py:70
 msgid "Turkish"
 msgstr "Türkçe"
 
-#: otokon_form/settings.py:62
+#: otokon_form/settings.py:71
 msgid "English"
 msgstr "İngilizce"
 
-#: templates/form_create.html:10
+#: templates/base.html:11
 msgid "OTOKON Form Create"
 msgstr "OTOKON Form Oluşturma"
 
-#: templates/form_create.html:61
+#: templates/base.html:36
+msgid "Log out"
+msgstr "Çıkış"
+
+#: templates/form.html:5
 msgid "Form Create"
 msgstr "Form Oluştur"
 
-#: templates/form_create.html:66
+#: templates/form.html:10
 msgid "Important Note"
 msgstr "Önemli Not"
 
-#: templates/form_create.html:67
+#: templates/form.html:11
 msgid ""
 "\n"
-"          <p>Please go and register to <a href=\"http://www.otokon.itu.edu."
-"tr/forum/\">\n"
-"          forum</a> as your username in the format \"name surname\". The "
+"  <p>Please go and register to <a href=\"http://www.otokon.itu.edu.tr/forum/"
+"\">\n"
+"  forum</a> as your username in the format \"name surname\". The "
 "announcements\n"
-"          regarding OTOKON such as organizations and seminars are made "
-"using\n"
-"          this forum.</p>\n"
-"          "
+"  regarding OTOKON such as organizations and seminars are made using\n"
+"  this forum.</p>\n"
+"  "
 msgstr ""
 "\n"
 "<p>Lütfen <a href='http://www.otokon.itu.edu.tr/forum'>http://www.otokon.itu."
@@ -219,6 +234,18 @@ msgstr ""
 "organizasyonlar vb.- forumdan yapılmaktadır.</p>\n"
 "         "
 
-#: templates/form_create.html:75
+#: templates/form.html:19
 msgid "Submit"
 msgstr "Onayla"
+
+#: templates/login.html:8 templates/login.html.py:24
+msgid "Login"
+msgstr "Giriş"
+
+#: templates/login.html:16
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+#: templates/login.html:20
+msgid "Password"
+msgstr "Şifre"

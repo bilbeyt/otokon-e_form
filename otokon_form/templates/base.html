@@ -1,4 +1,4 @@
-{% load i18n staticfiles bootstrap3 crispy_forms_tags %}
+{% load i18n static bootstrap3 crispy_forms_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +32,9 @@
             <li><a href="http://www.ituro.itu.edu.tr/">ITURO</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            {% if user.is_authenticated %}
+            <li class="active"><a href="{% url 'realout' %}">{% trans "Log out" %}<span class="sr-only">(current)</span></a></li>
+            {% endif %}
             {% if LANGUAGE_CODE == 'en' %}
             <li class="active" id="language-button"><a href="#">Türkçe<span class="sr-only">(current)</span></a></li>
             {% elif LANGUAGE_CODE == 'tr' %}
@@ -54,25 +57,14 @@
         <input type="submit" value="Go" id="language-form-submit" />
       </form>
       <br>
-      {% bootstrap_messages %}
       <br>
-      <h1>{% trans "Form Create" %}</h1>
-        <form enctype="multipart/form-data" action="" method="post">
-          {% csrf_token %}
-          {% crispy form %}
-          <br><hr><div class="note">
-          <h4 style="color:red">{% trans "Important Note" %}</h4>
-          {% blocktrans %}
-          <p>Please go and register to <a href="http://www.otokon.itu.edu.tr/forum/">
-          forum</a> as your username in the format "name surname". The announcements
-          regarding OTOKON such as organizations and seminars are made using
-          this forum.</p>
-          {% endblocktrans %}
-          <hr><br>
-          {% buttons %}
-          <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
-          {% endbuttons %}</div>
-        </form>
+      {% bootstrap_messages %}
+      {% if not user.is_authenticated %}
+      {% block login %}{% endblock %}
+      {% endif %}
+      {% if user.is_authenticated %}
+      {% block content %}{% endblock %}
+      {% endif %}
     </div>
     <script src="{% static "JS/jquery.min.js" %}"></script>
     <script src="{% static "JS/bootstrap.min.js" %}"></script>
