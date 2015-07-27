@@ -14,5 +14,3 @@ class FormAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Form, FormAdmin)
-
-a
