@@ -7,14 +7,6 @@
   {% csrf_token %}
   {% crispy form %}
   <br><hr><div class="note">
-  <h4 style="color:red">{% trans "Important Note" %}</h4>
-  {% blocktrans %}
-  <p>Please go and register to <a href="http://www.otokon.itu.edu.tr/forum/">
-  forum</a> as your username in the format "name surname". The announcements
-  regarding OTOKON such as organizations and seminars are made using
-  this forum.</p>
-  {% endblocktrans %}
-  <hr><br>
   {% buttons %}
   <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
   {% endbuttons %}</div>

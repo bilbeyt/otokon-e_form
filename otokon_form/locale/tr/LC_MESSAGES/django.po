@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-26 09:41+0300\n"
+"POT-Creation-Date: 2015-07-27 22:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,17 +22,21 @@ msgstr ""
 msgid "Personal Information"
 msgstr "Kişisel Bilgiler"
 
-#: form/forms.py:28
+#: form/forms.py:25
 msgid "Contact"
-msgstr "Bağlantı Bilgileri"
+msgstr "İletişim"
 
-#: form/forms.py:35
-msgid "Join Teams"
-msgstr "Ekiplere Katıl"
+#: form/forms.py:30
+msgid "Technical"
+msgstr "Teknik"
+
+#: form/forms.py:36
+msgid "What do you want to do ?"
+msgstr "Ne yapmak istiyorsunuz ?"
 
 #: form/models.py:8
 msgid "Full Name"
-msgstr "İsim Soyisim"
+msgstr "İsim"
 
 #: form/models.py:9
 msgid "Department"
@@ -43,138 +47,64 @@ msgid "School Number"
 msgstr "Okul Numarası"
 
 #: form/models.py:11
-msgid "Term"
-msgstr "Dönem"
+msgid "Birthday"
+msgstr "Doğumgünü"
 
 #: form/models.py:12
-msgid "Birthday"
-msgstr "Doğum Günü"
+msgid "Please enter birthday as YYYY-MM-DD"
+msgstr "Doğumgününü YYYY-AA-GG olarak giriniz"
 
 #: form/models.py:13
-msgid "Please enter birthday as YYYY-MM-DD"
-msgstr "Lütfen doğum gününüzü YYYY-AA-GG şeklinde girin"
-
-#: form/models.py:14
-msgid "Interests"
-msgstr "İlgi Alanları"
-
-#: form/models.py:15
-msgid "Technical Information"
-msgstr "Teknik Bilgi"
-
-#: form/models.py:16
-msgid "Your works about hardware or software"
-msgstr "Donanım veya yazılım alanlarındaki çalışmalarınız"
-
-#: form/models.py:17
-msgid "Phone Number"
-msgstr "Telefon Numarası"
-
-#: form/models.py:17
-msgid "Please enter your country code too. For Turkey starts with +90"
-msgstr "Lütfen ülke kodunuzu da giriniz. Türkiye için +90 ile başlar."
-
-#: form/models.py:19
-msgid "E-Mail"
-msgstr "E-Mail"
-
-#: form/models.py:20
-msgid "Dorm Adress"
-msgstr "Yurt Adresi"
-
-#: form/models.py:21
-msgid "Home Adress"
-msgstr "Ev Adresi"
-
-#: form/models.py:22
 msgid "Registry Date"
 msgstr "Kayıt Tarihi"
 
+#: form/models.py:14
+msgid "Phone Number"
+msgstr "Telefon Numarası"
+
+#: form/models.py:14
+msgid "Please enter your country code too. For Turkey starts with +90"
+msgstr "Lütfen ülke kodunuzu da yazın. Türkiye için +90"
+
+#: form/models.py:16
+msgid "E-Mail"
+msgstr "Mail"
+
+#: form/models.py:17
+msgid "Interests"
+msgstr "İlgi Alanları"
+
+#: form/models.py:18
+msgid "Technical Information"
+msgstr "Teknik Bilgi"
+
+#: form/models.py:19
+msgid "Experiences"
+msgstr "Deneyimler"
+
+#: form/models.py:20
+msgid "Join technical projects"
+msgstr "Teknik projelere katıl"
+
+#: form/models.py:21
+msgid "Join educations"
+msgstr "Eğitimlere katıl"
+
+#: form/models.py:22
+msgid "Join Informatics Team"
+msgstr "Bilişim Ekibine katıl"
+
 #: form/models.py:23
-msgid "Organization Team"
-msgstr "Organizasyon Ekibi"
+msgid "Join KONTROL Magazine"
+msgstr "KONTROL dergisine katıl"
 
 #: form/models.py:24
-msgid ""
-"Organization team works actively in OTOKON's related organizations such as "
-"ITURO and TOK. Advertising, organization planning ,and communicating with "
-"sponsors are the works for this team."
-msgstr ""
-"OTOKON'un dahilinde bulunduğu organizasyonlarda aktif görev alır. ITURO ve "
-"TOK bunlara örnektir. Organizasyon planlama, tanıtım, sponsorlarla iletişim "
-"gibi çalışmalarda görev alır."
+msgid "Join ITURO Team"
+msgstr "ITURO Ekibine katıl"
 
-#: form/models.py:28
-msgid "Technical Team"
-msgstr "Teknik Ekip"
-
-#: form/models.py:29
-msgid ""
-"This team works on the technical projects which are suggested or already "
-"exist. Also, this team attendslocal or international projects. Project "
-"managers and the Education Team give necessary technical information."
-msgstr ""
-"Üzerinde çalışılması önerilen ya da var olan teknik projeleri yürütür. "
-"Ulusal ve Uluslar arası projelere katılır. Gerekli teknik bilgi proje "
-"sorumluları ve Teknik Ekip tarafından verilir."
-
-#: form/models.py:33
-msgid "Informatics Team"
-msgstr "Bilişim Ekibi"
-
-#: form/models.py:34
-msgid ""
-"This team is responsible for club's computer andforum. Also, this team works "
-"on online registry, database, kiosk and RFID technologies."
-msgstr ""
-"Kulüp bilgisayarı ve forumundan sorumludur. İnternetten kayıt, veritabanı, "
-"kiosk ve RFID teknolojileri üzerine çalışır."
-
-#: form/models.py:37
-msgid "Education Team"
-msgstr "Eğitim Ekibi"
-
-#: form/models.py:38
-msgid ""
-"This team organizes seminars and educations to sharing information. Also, "
-"this team provides a basis of knowledge for OTOKON's technical projects."
-msgstr ""
-"OTOKON'un teknik projeleri için zemin hazırlamaya yönelik çalışma yapar. "
-"Bilgi paylaşımına yönelik eğitimler ve seminerler düzenler."
-
-#: form/models.py:41
-msgid "Press and Publishment Team"
-msgstr "Basın Yayın Ekibi"
-
-#: form/models.py:42
-msgid ""
-"This team works on archiving and sharing informationwhich are provided from "
-"technical works and researches quickly. Also, this team publishes KONTROL "
-"magazine."
-msgstr ""
-"Teknik çalışmalar ve araştırmalar sonucu elde edilmiş bilgi havuzunu basılı "
-"ya da elektronik ortamda arşivleyip paylaşarak bilginin kısa yoldan "
-"yayılmasını sağlar. KONTROL dergisini çıkarır."
-
-#: form/models.py:45
-msgid "Technical Trip and Social Activity Team"
-msgstr "Teknik Gezi ve Sosyal Etkinlikler Ekibi"
-
-#: form/models.py:47
-msgid ""
-"This team organize technical trip to give new points of view to members of "
-"club, also social activities are organized to motivate members"
-msgstr ""
-"OTOKON üyelerinin mesleğe yönelik ufuklarını açmak üzere teknik geziler, "
-"motivasyonu sürdürmek için sosyal etkinlikler düzenler."
-
-#: form/models.py:50
+#: form/models.py:25
 msgid "Evaluated ?"
-msgstr "Değerlendirildi mi?"
-
-#: form/models.py:51
-msgid "Is form evaluated?"
-msgstr "Form değerlendirildi mi?"
+msgstr "Değerlendirildi mi ?"
 
 #: form/views.py:23
 msgid "You are successfully logged out"
@@ -186,11 +116,11 @@ msgstr "Başarıyla giriş yaptınız"
 
 #: form/views.py:37
 msgid "Username and password mismatch"
-msgstr "Kullanıcı adı ve şifre eşleşmedi"
+msgstr "Kullanıcı adı ve şifre uyuşmadi"
 
 #: form/views.py:53
 msgid "Form created successfully!"
-msgstr "Form başarıyla oluşturuldu."
+msgstr "Form başarıyla oluştu!"
 
 #: otokon_form/settings.py:70
 msgid "Turkish"
@@ -212,29 +142,7 @@ msgstr "Çıkış"
 msgid "Form Create"
 msgstr "Form Oluştur"
 
-#: templates/form.html:10
-msgid "Important Note"
-msgstr "Önemli Not"
-
 #: templates/form.html:11
-msgid ""
-"\n"
-"  <p>Please go and register to <a href=\"http://www.otokon.itu.edu.tr/forum/"
-"\">\n"
-"  forum</a> as your username in the format \"name surname\". The "
-"announcements\n"
-"  regarding OTOKON such as organizations and seminars are made using\n"
-"  this forum.</p>\n"
-"  "
-msgstr ""
-"\n"
-"<p>Lütfen <a href='http://www.otokon.itu.edu.tr/forum'>http://www.otokon.itu."
-"edu.tr/forum</a> adresine girip kullanıcı adınız 'adınız soyadınız' olacak "
-"şekilde kayıt olunuz. Kulübümüzle ilgili duyurular -eğitimler, "
-"organizasyonlar vb.- forumdan yapılmaktadır.</p>\n"
-"         "
-
-#: templates/form.html:19
 msgid "Submit"
 msgstr "Onayla"
 
@@ -243,9 +151,9 @@ msgid "Login"
 msgstr "Giriş"
 
 #: templates/login.html:16
-msgid "Username"
-msgstr "Kullanıcı Adı"
+msgid "username"
+msgstr "kullanıcı adı"
 
 #: templates/login.html:20
-msgid "Password"
-msgstr "Şifre"
+msgid "password"
+msgstr "şifre"

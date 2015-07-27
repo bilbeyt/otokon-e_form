@@ -19,26 +19,26 @@ class FormCreateForm(forms.ModelForm):
                 'name',
                 'department',
                 'school_number',
-                'term',
                 'birthday',
-                'interests',
-                'tech_info',
             ),
             Tab(
                 _('Contact'),
-                'phone_number',
                 'mail',
-                'dorm_adress',
-                'home_adress',
+                'phone_number',
             ),
             Tab(
-                _('Join Teams'),
-                'is_organization',
-                'is_technical',
-                'is_informatics',
+                _('Technical'),
+                'experience',
+                'tech_info',
+                'interests',
+            ),
+            Tab(
+                _('What do you want to do ?'),
+                'is_projects',
                 'is_education',
-                'is_publish',
-                'is_social',
+                'is_informatics',
+                'is_magazine',
+                'is_robot',
             )
         )
     )

@@ -7,7 +7,7 @@ from django.core.urlresolvers import reverse_lazy
 
 urlpatterns = [
     url(r'^$',
-        RedirectView.as_view(url=reverse_lazy("create")),
+        RedirectView.as_view(url=reverse_lazy("create"), permanent=True),
         name="base"),
     url(r'^create/$',
         FormCreateView.as_view(),
