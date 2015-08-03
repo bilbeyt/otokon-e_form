@@ -1,14 +1,14 @@
 {% extends "base.html" %}
-{% load i18n crispy_forms_tags bootstrap3 %}
+{% load i18n bootstrap3 crispy_forms_tags %}
 {% bootstrap_messages %}
 {% block content %}
 <h1>{% trans "Form Create" %}</h1>
-<form enctype="multipart/form-data" action="" method="post">
+<form class="form-horizontal" enctype="multipart/form-data" action="" method="post">
   {% csrf_token %}
+  {{ form.media }}
   {% crispy form %}
-  <br><hr><div class="note">
-  {% buttons %}
-  <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
-  {% endbuttons %}</div>
-</form>
+  <br><div class="note">
+    {% buttons %}
+    <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
+  {% endbuttons %}</div></form>
 {% endblock %}
