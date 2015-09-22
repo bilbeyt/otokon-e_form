@@ -18,8 +18,8 @@ class FormCreateForm(forms.ModelForm):
             AccordionGroup(_('Personal Information'),
                 'name',
                 'department',
+                'other_departments',
                 'school_number',
-                'birthday',
             ),
             AccordionGroup(_('Contact'),
                 'phone_number',
@@ -42,7 +42,3 @@ class FormCreateForm(forms.ModelForm):
     class Meta:
         model = Form
         exclude=['reg_date', 'is_evaluated']
-
-    def __init__(self, *args, **kwargs):
-        super(FormCreateForm, self).__init__(*args, **kwargs)
-        self.fields['birthday'] = forms.DateField(widget=widgets.AdminDateWidget())

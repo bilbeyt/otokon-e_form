@@ -3,11 +3,20 @@ from django.utils.translation import ugettext_lazy as _
 from django import forms
 
 
+Department_Choices = (
+    (_("Control and Automation Engineering"), ("KON")),
+    (_("Computer Engineering"), ("BLG")),
+    (_("Electronics and Communication Engineering"), ("EHB")),
+    (_("Electrical Engineering"), ("ELE")),
+    (_("Others"), ("OTH")),
+)
+
+
 class Form(models.Model):
     name = models.CharField(_("Full Name"), max_length=150)
-    department = models.CharField(_("Department"), max_length=100)
+    department = models.CharField(_("Department"), choices=Department_Choices, max_length=100)
+    other_departments = models.CharField(_("Other Departments"), max_length=100, null=True, blank=True)
     school_number = models.PositiveIntegerField(_("School Number"))
-    birthday = models.DateField(_("Birthday"), auto_now_add=False,)
     reg_date = models.DateField(_("Registry Date"), auto_now_add=True)
     phone_number = models.CharField(_("Phone Number"), max_length=15)
     mail = models.EmailField(_("E-Mail"), unique=True)

@@ -11,4 +11,21 @@
     {% buttons %}
     <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
   {% endbuttons %}</div></form>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#div_id_other_departments").hide();
+    $("#div_id_department").on("change",function(){
+      var x = $( "#id_department option:selected" ).text();
+       if( x == "OTH"){
+          $("#div_id_other_departments").show();
+        }
+       else if( x != "OTH"){
+         $("#div_id_other_departments").hide();
+       };
+    });
+  });
+
+  </script>
 {% endblock %}
