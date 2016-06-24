@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'form',
+    'post_mail',
     'crispy_forms',
     'bootstrap3',
     'form_api',
@@ -154,3 +155,8 @@ STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, "public", "stati
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+try:
+    from local_settings.py import *
+except ImportError:
+    pass
