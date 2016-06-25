@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from form.models import Form
+from post_mail.models import EmailMessage
 
 
 class FormSerializer(serializers.HyperlinkedModelSerializer):
@@ -30,3 +31,8 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ('url', 'name')
+
+
+class EmailMessageSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = EmailMessage

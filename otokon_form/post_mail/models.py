@@ -11,9 +11,9 @@ class EmailMessage(models.Model):
     content = models.TextField()
     to = models.ManyToManyField(Form, related_name="mail_receiver")
     time = models.DateTimeField(auto_now_add=True)
-    
+
     def __str__(self):
-	return self.title
+        return self.title
 
 
 @receiver(pre_save, sender=EmailMessage)
@@ -24,4 +24,4 @@ def EmailMessage_sender(sender, instance, *args, **kwargs):
 	instance.sender.mail,
         instance.to.all().values_list("mail", flat=True),
 	fail_silently=False,
-    ) 
+    )

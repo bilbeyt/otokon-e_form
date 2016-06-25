@@ -1,8 +1,9 @@
-from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from form.models import Form
+from post_mail.models import EmailMessage
 from rest_framework import viewsets
-from form_api.serializers import UserSerializer, GroupSerializer, FormSerializer
+from form_api.serializers import UserSerializer, GroupSerializer, \
+                                FormSerializer, EmailMessageSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -20,3 +21,8 @@ class FormViewSet(viewsets.ModelViewSet):
 
     queryset = Form.objects.all()
     serializer_class = FormSerializer
+
+
+class EmailMessageViewSet(viewsets.ModelViewSet):
+    queryset = EmailMessage.objects.all()
+    serializer_class = EmailMessageSerializer

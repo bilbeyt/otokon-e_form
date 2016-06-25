@@ -12,6 +12,7 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'form', views.FormViewSet)
+router.register(r'mail', views.EmailMessageViewSet)
 
 urlpatterns = [
     url(r'^api/', include(router.urls)),
