@@ -1,31 +1,34 @@
 {% extends "base.html" %}
-{% load i18n bootstrap3 crispy_forms_tags %}
+{% load i18n bootstrap3 %}
 {% bootstrap_messages %}
 {% block content %}
-<h1>{% trans "Form Create" %}</h1>
+<h2 align="left">{% trans "Form Create" %}</h2>
+<hr><br>
 <form class="form-horizontal" enctype="multipart/form-data" action="" method="post">
   {% csrf_token %}
-  {{ form.media }}
-  {% crispy form %}
-  <br><div class="note">
+  {% bootstrap_form form %}
+  <br>
+  <div class="note">
     {% buttons %}
-    <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
-  {% endbuttons %}</div></form>
+      <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
+    {% endbuttons %}
+  </div>
+</form>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script>
   $(document).ready(function(){
-    $("#div_id_other_departments").hide();
-    $("#div_id_department").on("change",function(){
+    $("#id_other_departments").hide();
+    $('label[for=id_other_departments]').hide();
+    $("#id_department").on("change",function(){
       var x = $( "#id_department option:selected" ).text();
        if( x == "OTH"){
-          $("#div_id_other_departments").show();
+          $("#id_other_departments").show();
         }
        else if( x != "OTH"){
-         $("#div_id_other_departments").hide();
+         $("#id_other_departments").hide();
        };
     });
   });
-
-  </script>
+ </script>
 {% endblock %}

@@ -40,7 +40,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'form',
     'post_mail',
-    'crispy_forms',
     'bootstrap3',
     'form_api',
     'rest_framework',

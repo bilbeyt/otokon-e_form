@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-from django import forms
 
 
 Department_Choices = (
@@ -20,9 +19,9 @@ class Form(models.Model):
     reg_date = models.DateField(_("Registry Date"), auto_now_add=True)
     phone_number = models.CharField(_("Phone Number"), max_length=15)
     mail = models.EmailField(_("E-Mail"), unique=True)
-    interests = models.CharField(_("Interests"), blank=True, max_length=150)
-    tech_info = models.CharField(_("Technical Information"), blank=True, max_length=150)
-    experience = models.CharField(_("Experiences"), blank=True, max_length=150)
+    interests = models.CharField(_("Interests"), max_length=150)
+    tech_info = models.CharField(_("Technical Information"), max_length=150)
+    experience = models.CharField(_("Experiences"), max_length=150)
     is_projects = models.BooleanField(_("Join technical projects"), default=False)
     is_education = models.BooleanField(_("Join educations"), default=False)
     is_informatics = models.BooleanField(_("Join Informatics Team"), default=False)

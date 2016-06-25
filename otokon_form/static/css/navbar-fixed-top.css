@@ -1,20 +1,6 @@
-body {
-  padding-top: 70px;
-}
-.container{
-  width:1000px;
-}
 .note{
   text-align:center;
 }
-.nav-tabs{
-  padding-top: 60px;
-}
-.form-group{
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding-top: 20px;
-}
-.navbar-right{
-  margin-right: 0px;
+.container{
+  max-width: 900px;
 }

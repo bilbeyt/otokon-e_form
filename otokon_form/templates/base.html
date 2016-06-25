@@ -11,12 +11,10 @@
     <title>{% trans 'OTOKON Form Create' %}</title>
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static "css/navbar-fixed-top.css" %}" rel="stylesheet">
-    <link href="{% static "admin/css/widgets.css" %}" rel="stylesheet">
-    <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
     <script src="{% static "JS/ie-emulation-modes-warning.js" %}"></script>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -58,8 +56,6 @@
         {% endif %}
         <input type="submit" value="Go" id="language-form-submit" />
       </form>
-      <br>
-      <br>
       {% bootstrap_messages %}
       {% if not user.is_authenticated %}
       {% block login %}{% endblock %}
@@ -72,11 +68,5 @@
     <script src="{% static "JS/bootstrap.min.js" %}"></script>
     <script src="{% static "JS/ie10-viewport-bug-workaround.js" %}"></script>
     <script src="{% static "JS/change_language.js" %}"></script>
-    <script type="text/javascript" src="/admin/jsi18n/"></script>
-    <script type="text/javascript" src="/static/admin/js/core.js"></script>
-    <script type="text/javascript" src="/static/admin/js/jquery.js"></script>
-    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
-    <script type="text/javascript" src="/static/admin/js/calendar.js"></script>
-    <script type="text/javascript" src="/static/admin/js/admin/DateTimeShortcuts.js"></script>
   </body>
 </html>
