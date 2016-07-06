@@ -1,6 +1,6 @@
 from django.db import models
 from form.models import Form
-from django.db.models.signals import pre_save
+from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.mail import send_mail
 
@@ -16,12 +16,12 @@ class EmailMessage(models.Model):
         return self.title
 
 
-@receiver(pre_save, sender=EmailMessage)
+@receiver(post_save, sender=EmailMessage, dispatch_uid="emailmessage_identifier")
 def EmailMessage_sender(sender, instance, *args, **kwargs):
     send_mail(
-	instance.title,
-	instance.content,
-	instance.sender.mail,
+	    instance.title,
+	    instance.content,
+	    "otokon@itu.edu.tr",
         instance.to.all().values_list("mail", flat=True),
-	fail_silently=False,
+	    fail_silently=False,
     )
