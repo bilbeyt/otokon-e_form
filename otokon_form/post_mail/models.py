@@ -3,10 +3,11 @@ from form.models import Form
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.mail import send_mail
+from django.contrib.auth.models import User
 
 
 class EmailMessage(models.Model):
-    sender = models.ForeignKey(Form, related_name="mail_sender")
+    sender = models.ForeignKey(User, related_name="mail_sender")
     title = models.CharField(max_length=100)
     content = models.TextField()
     to = models.ManyToManyField(Form, related_name="mail_receiver")
