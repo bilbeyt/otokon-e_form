@@ -66,6 +66,13 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.locale.LocaleMiddleware',
 )
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
 LANGUAGES = (
     ('tr', _('Turkish')),
     ('en', _('English')),
@@ -101,14 +108,7 @@ WSGI_APPLICATION = 'otokon_form.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# https://docs.djangoproject.com/en/1.8/ref/settings/#database
 
 TEMPLATES = [
     {
@@ -130,7 +130,7 @@ TEMPLATES = [
     },
 ]
 
-
+EMAIL_USE_TLS = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -156,6 +156,6 @@ STATICFILES_DIRS = (
 )
 
 try:
-    from local_settings.py import *
+    from local_settings import *
 except ImportError:
     pass
