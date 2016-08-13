@@ -3,7 +3,7 @@
 {% bootstrap_messages %}
 {% block content %}
 <h2 align="left">{% trans "Form Create" %}</h2>
-<hr><br>
+<h><br>
 <form class="form-horizontal" enctype="multipart/form-data" action="" method="post">
   {% csrf_token %}
   {% bootstrap_form form %}
@@ -21,7 +21,7 @@
     $("#id_other_departments").hide();
     $('label[for=id_other_departments]').hide();
     $("#id_department").on("change",function(){
-      var x = $( "#id_department option:selected" ).text();
+      var x = $( "#id_department option:selected" ).val();
        if( x == "OTH"){
           $("#id_other_departments").show();
         }

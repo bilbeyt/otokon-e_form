@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-27 22:12+0300\n"
+"POT-Creation-Date: 2016-08-13 08:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,91 +18,107 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: form/forms.py:18
-msgid "Personal Information"
-msgstr "Kişisel Bilgiler"
+#: form/models.py:6
+msgid "KON"
+msgstr ""
 
-#: form/forms.py:25
-msgid "Contact"
-msgstr "İletişim"
+#: form/models.py:6
+msgid "Control and Automation Engineering"
+msgstr "Kontrol ve Otomasyon Mühendisliği"
 
-#: form/forms.py:30
-msgid "Technical"
-msgstr "Teknik"
+#: form/models.py:7
+msgid "BLG"
+msgstr ""
 
-#: form/forms.py:36
-msgid "What do you want to do ?"
-msgstr "Ne yapmak istiyorsunuz ?"
+#: form/models.py:7
+msgid "Computer Engineering"
+msgstr "Bilgisayar Mühendisliği"
 
 #: form/models.py:8
+msgid "EHB"
+msgstr ""
+
+#: form/models.py:8
+msgid "Electronics and Communication Engineering"
+msgstr "Elektronik Haberleşme Mühendisliği"
+
+#: form/models.py:9
+msgid "ELE"
+msgstr ""
+
+#: form/models.py:9
+msgid "Electrical Engineering"
+msgstr "Elektrik Mühendisliği"
+
+#: form/models.py:10
+msgid "OTH"
+msgstr ""
+
+#: form/models.py:10
+msgid "Others"
+msgstr "Diğer Bölümler"
+
+#: form/models.py:15
 msgid "Full Name"
 msgstr "İsim"
 
-#: form/models.py:9
+#: form/models.py:16
 msgid "Department"
 msgstr "Bölüm"
 
-#: form/models.py:10
+#: form/models.py:17
+msgid "Other Departments"
+msgstr "Bölüm"
+
+#: form/models.py:18
 msgid "School Number"
 msgstr "Okul Numarası"
 
-#: form/models.py:11
-msgid "Birthday"
-msgstr "Doğumgünü"
-
-#: form/models.py:12
-msgid "Please enter birthday as YYYY-MM-DD"
-msgstr "Doğumgününü YYYY-AA-GG olarak giriniz"
-
-#: form/models.py:13
+#: form/models.py:19
 msgid "Registry Date"
 msgstr "Kayıt Tarihi"
 
-#: form/models.py:14
+#: form/models.py:20
 msgid "Phone Number"
 msgstr "Telefon Numarası"
 
-#: form/models.py:14
-msgid "Please enter your country code too. For Turkey starts with +90"
-msgstr "Lütfen ülke kodunuzu da yazın. Türkiye için +90"
-
-#: form/models.py:16
+#: form/models.py:21
 msgid "E-Mail"
 msgstr "Mail"
 
-#: form/models.py:17
+#: form/models.py:22
 msgid "Interests"
 msgstr "İlgi Alanları"
 
-#: form/models.py:18
+#: form/models.py:23
 msgid "Technical Information"
 msgstr "Teknik Bilgi"
 
-#: form/models.py:19
+#: form/models.py:24
 msgid "Experiences"
 msgstr "Deneyimler"
 
-#: form/models.py:20
+#: form/models.py:25
 msgid "Join technical projects"
 msgstr "Teknik projelere katıl"
 
-#: form/models.py:21
+#: form/models.py:26
 msgid "Join educations"
 msgstr "Eğitimlere katıl"
 
-#: form/models.py:22
+#: form/models.py:27
 msgid "Join Informatics Team"
 msgstr "Bilişim Ekibine katıl"
 
-#: form/models.py:23
+#: form/models.py:28
 msgid "Join KONTROL Magazine"
 msgstr "KONTROL dergisine katıl"
 
-#: form/models.py:24
+#: form/models.py:29
 msgid "Join ITURO Team"
 msgstr "ITURO Ekibine katıl"
 
-#: form/models.py:25
+#: form/models.py:30
 msgid "Evaluated ?"
 msgstr "Değerlendirildi mi ?"
 
@@ -122,11 +138,11 @@ msgstr "Kullanıcı adı ve şifre uyuşmadi"
 msgid "Form created successfully!"
 msgstr "Form başarıyla oluştu!"
 
-#: otokon_form/settings.py:70
+#: otokon_form/settings.py:77
 msgid "Turkish"
 msgstr "Türkçe"
 
-#: otokon_form/settings.py:71
+#: otokon_form/settings.py:78
 msgid "English"
 msgstr "İngilizce"
 
@@ -134,7 +150,7 @@ msgstr "İngilizce"
 msgid "OTOKON Form Create"
 msgstr "OTOKON Form Oluşturma"
 
-#: templates/base.html:36
+#: templates/base.html:37
 msgid "Log out"
 msgstr "Çıkış"
 
@@ -142,7 +158,7 @@ msgstr "Çıkış"
 msgid "Form Create"
 msgstr "Form Oluştur"
 
-#: templates/form.html:11
+#: templates/form.html:13
 msgid "Submit"
 msgstr "Onayla"
 

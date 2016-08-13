@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-27 22:12+0300\n"
+"POT-Creation-Date: 2016-08-13 08:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,91 +17,107 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: form/forms.py:18
-msgid "Personal Information"
+#: form/models.py:6
+msgid "KON"
 msgstr ""
 
-#: form/forms.py:25
-msgid "Contact"
+#: form/models.py:6
+msgid "Control and Automation Engineering"
 msgstr ""
 
-#: form/forms.py:30
-msgid "Technical"
+#: form/models.py:7
+msgid "BLG"
 msgstr ""
 
-#: form/forms.py:36
-msgid "What do you want to do ?"
+#: form/models.py:7
+msgid "Computer Engineering"
 msgstr ""
 
 #: form/models.py:8
-msgid "Full Name"
+msgid "EHB"
+msgstr ""
+
+#: form/models.py:8
+msgid "Electronics and Communication Engineering"
 msgstr ""
 
 #: form/models.py:9
-msgid "Department"
+msgid "ELE"
+msgstr ""
+
+#: form/models.py:9
+msgid "Electrical Engineering"
 msgstr ""
 
 #: form/models.py:10
-msgid "School Number"
+msgid "OTH"
 msgstr ""
 
-#: form/models.py:11
-msgid "Birthday"
+#: form/models.py:10
+msgid "Others"
 msgstr ""
 
-#: form/models.py:12
-msgid "Please enter birthday as YYYY-MM-DD"
-msgstr ""
-
-#: form/models.py:13
-msgid "Registry Date"
-msgstr ""
-
-#: form/models.py:14
-msgid "Phone Number"
-msgstr ""
-
-#: form/models.py:14
-msgid "Please enter your country code too. For Turkey starts with +90"
+#: form/models.py:15
+msgid "Full Name"
 msgstr ""
 
 #: form/models.py:16
-msgid "E-Mail"
+msgid "Department"
 msgstr ""
 
 #: form/models.py:17
-msgid "Interests"
+msgid "Other Departments"
 msgstr ""
 
 #: form/models.py:18
-msgid "Technical Information"
+msgid "School Number"
 msgstr ""
 
 #: form/models.py:19
-msgid "Experiences"
+msgid "Registry Date"
 msgstr ""
 
 #: form/models.py:20
-msgid "Join technical projects"
+msgid "Phone Number"
 msgstr ""
 
 #: form/models.py:21
-msgid "Join educations"
+msgid "E-Mail"
 msgstr ""
 
 #: form/models.py:22
-msgid "Join Informatics Team"
+msgid "Interests"
 msgstr ""
 
 #: form/models.py:23
-msgid "Join KONTROL Magazine"
+msgid "Technical Information"
 msgstr ""
 
 #: form/models.py:24
-msgid "Join ITURO Team"
+msgid "Experiences"
 msgstr ""
 
 #: form/models.py:25
+msgid "Join technical projects"
+msgstr ""
+
+#: form/models.py:26
+msgid "Join educations"
+msgstr ""
+
+#: form/models.py:27
+msgid "Join Informatics Team"
+msgstr ""
+
+#: form/models.py:28
+msgid "Join KONTROL Magazine"
+msgstr ""
+
+#: form/models.py:29
+msgid "Join ITURO Team"
+msgstr ""
+
+#: form/models.py:30
 msgid "Evaluated ?"
 msgstr ""
 
@@ -121,11 +137,11 @@ msgstr ""
 msgid "Form created successfully!"
 msgstr ""
 
-#: otokon_form/settings.py:70
+#: otokon_form/settings.py:77
 msgid "Turkish"
 msgstr ""
 
-#: otokon_form/settings.py:71
+#: otokon_form/settings.py:78
 msgid "English"
 msgstr ""
 
@@ -133,7 +149,7 @@ msgstr ""
 msgid "OTOKON Form Create"
 msgstr ""
 
-#: templates/base.html:36
+#: templates/base.html:37
 msgid "Log out"
 msgstr ""
 
@@ -141,7 +157,7 @@ msgstr ""
 msgid "Form Create"
 msgstr ""
 
-#: templates/form.html:11
+#: templates/form.html:13
 msgid "Submit"
 msgstr ""
 

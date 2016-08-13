@@ -3,11 +3,11 @@ from django.utils.translation import ugettext_lazy as _
 
 
 Department_Choices = (
-    (_("Control and Automation Engineering"), ("KON")),
-    (_("Computer Engineering"), ("BLG")),
-    (_("Electronics and Communication Engineering"), ("EHB")),
-    (_("Electrical Engineering"), ("ELE")),
-    (_("Others"), ("OTH")),
+    (_("KON"), _("Control and Automation Engineering")),
+    (_("BLG"), _("Computer Engineering")),
+    (_("EHB"), _("Electronics and Communication Engineering")),
+    (_("ELE"), _("Electrical Engineering")),
+    (_("OTH"), _("Others")),
 )
 
 
