@@ -84,26 +84,6 @@ LOCALE_PATHS = (
 
 ROOT_URLCONF = 'otokon_form.urls'
 
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-                "django.core.context_processors.i18n",
-                "django.core.context_processors.media",
-                "django.core.context_processors.static",
-                "django.core.context_processors.tz",
-            ],
-        },
-    },
-]
-
 WSGI_APPLICATION = 'otokon_form.wsgi.application'
 
 
@@ -135,7 +115,7 @@ EMAIL_USE_TLS = True
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'tr'
 
 TIME_ZONE = 'Turkey'
 
