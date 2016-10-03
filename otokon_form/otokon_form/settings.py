@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'bootstrap3',
     'form_api',
     'rest_framework',
+    'djcelery'
 )
 
 REST_FRAMEWORK = {

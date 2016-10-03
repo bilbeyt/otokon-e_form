@@ -1,7 +1,7 @@
 from django.contrib import admin
 from post_mail.models import EmailMessage
-from django.core.mail import send_mass_mail
 from form.models import Form
+from post_mail.tasks import send
 
 
 class EmailMessageAdmin(admin.ModelAdmin):
@@ -15,8 +15,8 @@ class EmailMessageAdmin(admin.ModelAdmin):
         ids = request.POST.getlist("to")
         mails = Form.objects.filter(id__in=ids).values_list("mail", flat=True)
         super(EmailMessageAdmin, self).save_model(request, obj, form, change)
-        message = (obj.title, obj.content, "otokon@itu.edu.tr", mails)
-        send_mass_mail((message,), fail_silently=False)
+        for i in range(0,248):
+            send("Hello", "Hello", "otokon@itu.edu.tr", "bilbeyt@gmail.com")
 
 
 admin.site.register(EmailMessage, EmailMessageAdmin)
