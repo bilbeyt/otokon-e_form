@@ -2,6 +2,7 @@ from django.core.management.base import BaseCommand, CommandError
 from post_mail.models import MailGroup
 from django.conf import settings
 from django.core.mail import send_mail
+import datetime
 
 
 class Command(BaseCommand):
@@ -36,10 +37,14 @@ class Command(BaseCommand):
 
         group = MailGroup.objects.get(slug=group_slug)
 
+        count = 1
+        now = datetime.datetime.now()
+
         for contact in group.contacts.all():
             try:
                 send_mail(subject, message_content, sender, [contact.mail], fail_silently=False)
-                self.stdout.write("Sent to {}".format(contact.name))
+                self.stdout.write("{}.Sent to {} {}".format(count, contact.name, now.strftime("%Y-%m-%d %H:%M")))
+                count += 1
             except:
                 self.stdout.write("Can not sent to {}".format(contact.name))
 
