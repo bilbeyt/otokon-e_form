@@ -1,5 +1,5 @@
 from django.contrib import admin
-from post_mail.models import EmailMessage
+from post_mail.models import EmailMessage, MailGroup
 from form.models import Form
 from post_mail.tasks import send
 
@@ -19,4 +19,12 @@ class EmailMessageAdmin(admin.ModelAdmin):
                 send(obj.title, obj.content, "otokon@itu.edu.tr", mail)
 
 
+class MailGroupAdmin(admin.ModelAdmin):
+    list_display = ["name", "created_date", "slug"]
+    list_filter = ["created_date"]
+    search_fields = ["name"]
+    exclude = ["slug"]
+
+
 admin.site.register(EmailMessage, EmailMessageAdmin)
+admin.site.register(MailGroup, MailGroupAdmin)
