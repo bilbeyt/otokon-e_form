@@ -39,6 +39,7 @@ class Command(BaseCommand):
         for contact in group.contacts.all():
             try:
                 send_mail(subject, message_content, sender, [contact.mail], fail_silently=False)
+                self.stdout.write("Sent to {}".format(contact.name))
             except:
                 self.stdout.write("Can not sent to {}".format(contact.name))
 
