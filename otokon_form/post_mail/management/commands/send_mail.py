@@ -40,6 +40,8 @@ class Command(BaseCommand):
         count = 1
         now = datetime.datetime.now()
 
+        self.stdout.write("Start")
+
         for contact in group.contacts.all():
             try:
                 send_mail(subject, message_content, sender, [contact.mail], fail_silently=False)
@@ -48,4 +50,4 @@ class Command(BaseCommand):
             except:
                 self.stdout.write("Can not sent to {}".format(contact.name))
 
-        self.stdout.write('All mails sent')
+        self.stdout.write('Finish')
